@@ -99,12 +99,13 @@ function updateShop() {
 function startGame() {
     updateScore()
     updateShop()
+    startInterval()
 }
 
 function purchaseUpgrade(i) {
     let cost = upgrades[i].price
     if (souls >= cost) {
-        upgrades[i].price = (cost * 1.5)
+        upgrades[i].price = Math.trunc(cost * 1.5)
         upgrades[i].quantity += 1
         souls -= cost
         soulsPerHarvest += upgrades[i].multiplier
@@ -115,11 +116,11 @@ function purchaseUpgrade(i) {
 function purchaseAutomaticUpgrade(i) {
     let cost = automaticUpgrades[i].price
     if (souls >= cost) {
-        automaticUpgrades[i].price = (cost * 1.5)
+        automaticUpgrades[i].price = Math.trunc(cost * 1.5)
         automaticUpgrades[i].quantity += 1
         souls -= cost
         updateShop()
-        startInterval()
+
     }
     else { alert('You do not have enough souls') }
 }
