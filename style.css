@@ -1,0 +1,46 @@
+.hidden{
+    visibility: hidden;
+}
+
+.home{
+    background-image: url(https://images.unsplash.com/photo-1505635552518-3448ff116af3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3Bvb2t5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+.ghost{
+    max-width: 40vh;
+    max-height: 40vh;
+}
+
+.purchaseable{
+    height: 8rem;
+    width: 8rem;
+    outline: solid black 3px;
+}
+
+.price-tag{
+    height: 4rem;
+    width: 4rem;
+    
+}
+
+.tooltip-box{
+margin-bottom: 5rem;
+}
+
+.tooltip-text{
+    position: absolute;
+    z-index: 2;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+}
+
+ 
